@@ -1,3 +1,263 @@
-.index-title {
-  font-size: 100px;
+
+.banner{
+  //background-image: url(../img/home-header.png);
+  background-image: url(/assets/images/home-header.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include medium{
+      background-image: url(/assets/images/home-header-sm.png);
+     
+      .text{
+          font-size: 16px;
+      }
+
+      .slogan{
+          font-size: 24px;
+      }
+
+      .container{
+          padding:144px 12px;
+      }
+
+  }
+  .btn{
+      padding:6px 12px;
+
+      &:hover{
+          opacity: 0.7;
+      }
+      
+  }
 }
+
+.feature{
+
+  .container{
+      @include small{
+          padding-top:40px;
+          padding-bottom: 40px;
+          .title{
+              font-size: 24px;
+          }
+      }
+  }
+  .list{
+      @include small{
+          gap:32px;
+      }
+  }
+
+
+  .item{
+      width:23%;
+      @include large{
+          width:48%;
+      }
+
+      @include preMedium{
+          width: 100%;
+      }
+  }
+  .itemImg{
+      width: 83px;
+  }
+
+
+}
+
+.series{
+
+  .title{
+      @include small{
+          font-size: 24px;
+          margin-bottom: 24px;
+      }
+  }
+  .item{
+      width: 31%;
+
+      @include large{
+          width: 100%;
+      }
+
+
+  }
+
+  .subtitle{
+      
+      @include xxsmall{
+          font-size: 24px;
+      }
+  }
+}
+
+.coBranding{
+
+  background-image: url(/assets/images/index-bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include medium{
+      background-image: url(/assets/images/index-bg-md.png);
+  }
+
+  @include xsmall{
+      background-image: url(/assets/images/index-bg-sm.png);
+  }
+
+  .container{
+      @include xsmall{
+          padding-top: 40px;
+          padding-bottom: 40px;
+      }
+     
+  }
+
+  .title{
+      @include xsmall{
+          font-size: 24px;
+          margin-bottom: 24px;
+      }
+  }
+
+  .detail{
+      @include medium{
+          flex-direction: column;
+          gap:24px;
+      }
+  }
+
+  .item{
+      width: 50%;
+      
+      @include medium{
+          width: 100%;
+      }
+  }
+
+  .img_1{
+      height: 240px;
+      background-image: url(/assets/images/home-section4-1.png);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @include xsmall{
+          background-image: url(/assets/images/home-section4-1-sm.png);
+      }
+  }
+
+  .img_2{
+      height: 240px;
+      background-image: url(/assets/images/home-section4-2.png);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @include xsmall{
+          background-image: url(/assets/images/home-section4-2-sm.png);
+      }
+  }
+
+
+
+  .subtitle{
+      @include xxsmall{
+          font-size: 24px;
+      }
+  }
+
+
+}
+
+.recommend{
+
+  .container{
+      @include xsmall{
+          padding-top: 40px;
+          padding-bottom: 40px;
+      }
+     
+  }
+
+  .title{
+      @include xsmall{
+          font-size: 24px;
+          margin-bottom: 24px;
+      }
+  }
+
+  .list{
+      @include xsmall{
+          gap:16px;
+      }
+  }
+
+
+  .item{
+      width: 23%;
+      box-shadow: 0px 2px 6px #00000029;
+      border-radius: 4px;
+      @include large{
+          width: 48%;
+      }
+
+      @include medium{
+          width:100%;
+      }
+
+      .itemImg{
+          @include medium{
+              width: 100%;
+          } 
+      }
+      
+  }
+
+  .textArea{
+      height: 205px;
+  }
+
+  .content{
+      flex-grow: 1;
+  }
+}
+
+.contact{
+  .container{
+      width: 50%;
+
+      @include large{
+          width: 83%;
+      }
+
+      @include xsmall{
+          width: 100%;
+      }
+  }
+
+  .title{
+      @include medium{
+          margin-bottom: 24px;
+      }
+  }
+
+  .suggest{
+      height: 136px;
+  }
+
+  .checkPrivacy{
+      margin: 0;
+  }
+
+  .submit{
+      width: 66%;
+      &:hover{
+          background-color: $secondary;
+      }
+  }
+}
+

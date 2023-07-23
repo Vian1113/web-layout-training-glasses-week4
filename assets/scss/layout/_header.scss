@@ -1,4 +1,45 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+header {
+
+  .logo {
+      width: 80px;
+  }
+
+  .item:hover {
+      .link {
+          color: $secondary;
+      }
+  }
+
+  .navbar{
+      @include preMedium{
+          flex-direction: column;
+          max-width: initial;
+          padding:0;
+
+          .logo{
+              align-self: start;
+              padding:16px 0px 16px 15px;
+          }
+
+          .menu{
+              flex-wrap: wrap;
+              align-items: start;
+              gap:0;
+              width: 100%;
+          }
+
+          .item{
+              width: 50%;
+              text-align: center;
+              padding-top:12px;
+              padding-bottom: 12px;
+              font-size: 16px;
+              border:1px solid $white;
+          }
+
+      }
+  }
+
+
+
 }
