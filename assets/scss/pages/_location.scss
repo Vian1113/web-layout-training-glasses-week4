@@ -1,0 +1,131 @@
+.locationArea{
+
+    .container{
+        @include small{
+            padding-top: 40px;
+            padding-bottom: 64px;
+        }
+    }
+    .title{
+        border-left:8px solid #9F1213;
+        padding-left: 16px;
+        @include small{
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+        
+    }
+
+    .text{
+        @include small{
+            font-size: 16px;
+           
+        }
+    }
+
+    .selectArea{
+        .selectBar{
+            width: 304px;
+            padding:6px 12px;
+            color:#495057;
+            border: 1px solid #CED4DA;
+            font-size: 18px;
+        }
+
+        @include small{
+            margin-bottom: 24px;
+        }
+    }
+    
+
+    .subtitle{
+        border:1px solid #00000020;
+    }
+
+
+
+    .detail{
+        border:1px solid #00000020;
+        border-top:none;
+        border-bottom:none;
+    }
+
+    .item{
+        width: 31%;
+        @include large{
+            width: 48%;
+            margin-bottom: 0;
+        }
+
+        @include small{
+            width: 100%;
+        }
+    }
+
+    .btn{
+
+        font-size: 19px;
+        &:hover{
+            background-color: $gray;
+        }
+    }
+
+    
+        
+    
+}
+
+.locationArea{
+    .branchInfo{
+        width: 41%;
+        .detail{
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1254901961);
+        }
+        @include medium{
+            width: 100%;
+            display: flex;
+            gap:24px;
+
+            .branchImg{
+                width: 50%;
+                height: 224px;
+            }
+
+            .textArea{
+                width: 50%;
+            }
+
+        }
+
+        @include small{
+            flex-direction: column;
+            gap:0px;
+            .branchImg{
+                width: 100%;
+               
+                
+            }
+
+            .textArea{
+                width: 100%;
+            }
+        }
+
+        
+    }
+
+    .access{
+        width: 56%;
+        height:auto;
+        @include medium{
+            width: 100%;
+            height: 414px;
+        }
+
+        @include small{
+            height: 208px;
+        }
+    }
+
+    
+}

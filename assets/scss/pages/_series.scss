@@ -1,0 +1,220 @@
+.seriesTitle {
+    .container {
+        @include medium {
+            padding-left: 0;
+            padding-right: 0;
+            max-width: initial;
+        }
+    }
+
+    .item {
+        font-size: 32px;
+        width: 33%;
+
+        @include medium {
+            width: 33.3%;
+            font-size: 24px;
+        }
+
+        @include small {
+            font-size: 16px;
+        }
+
+        &:hover {
+            background-color: $primary;
+
+            .link {
+                color: $white;
+            }
+        }
+    }
+
+    .currentPage {
+        padding-bottom: 16px;
+        border-bottom: 8px solid $primary;
+
+    }
+}
+
+.seriesBanner {
+    .bannerArea {
+        width: 50%;
+        height: 296px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .imgLeft {
+        background-image: url(/assets/images/product-header-1.png);
+
+        @include medium {
+            background-image: url(/assets/images/product-header-sm-1.png);
+        }
+
+    }
+
+    .imgRight {
+        background-image: url(/assets/images/product-header-2.png);
+
+        @include medium {
+            background-image: url(/assets/images/product-header-sm-2.png);
+        }
+    }
+
+}
+
+.sunglassesArea{
+    .imgLeft {
+        background-image: url(/assets/images/product-header-3.png);
+
+        @include medium {
+            background-image: url(/assets/images/product-header-sm-3.png);
+        }
+
+    }
+
+    .imgRight {
+        background-image: url(/assets/images/product-header-4.png);
+
+        @include medium {
+            background-image: url(/assets/images/product-header-sm-4.png);
+        }
+    }
+}
+
+.productList {
+
+    .container{
+        @include xsmall{
+            padding-top: 40px;
+            padding-bottom: 64px;
+        }
+    }
+
+    @include medium {
+
+        .list li:nth-child(10), .list li:nth-child(11),.list li:nth-child(12){
+            margin-bottom: 56px;
+        }
+    }
+
+    @include small{
+        .list li:nth-child(10), .list li:nth-child(11),.list li:nth-child(12){
+            margin-bottom: 0;
+        }
+    }
+
+    .textArea{
+        @include small{
+            margin-bottom: 24px;
+        }
+    }
+
+    .title {
+        font-size: 42px;
+
+        @include small {
+            font-size: 24px;
+        }
+    }
+
+    .subtitle {
+        font-size: 32px;
+        @include small {
+            font-size: 24px;
+        }
+    }
+
+    .list{
+        @include small{
+            margin-bottom: 64px;
+        }
+    }
+
+
+    .item {
+        width: 23%;
+
+        @include medium {
+            margin-bottom: 16px;
+            width: 48%;
+        }
+
+        @include small{
+            margin-bottom: 0;
+            width: 100%;
+        }
+    }
+
+    .color {
+        width: 24px;
+        height: 24px;
+        border-radius: 4px;
+
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+}
+
+.sunglassesProduct{
+    .item {
+        width: 31%;
+
+        @include medium {
+            width: 48%;
+        }
+        @include small{
+            width: 100%;
+        }
+
+    }
+}
+
+.pagination{
+    .previous,.next{
+        font-size: 19px;
+        padding:9.5px 12px;
+        line-height: 29px;
+        border: 1px solid #555555;
+        &:hover{
+            background-color: $dark;
+            color:$white;
+        }
+        @include small{
+            font-size: 16px;
+            padding:9.5px 13px;
+            line-height: 26px;
+        }
+
+    }
+    .next{
+        background-color: #F2F2F2;
+    }
+
+
+    .link{
+        font-size: 18px;
+        padding:10.5px 16px;
+        border: 1px solid #555555;
+        border-right:none;
+        &:hover{
+            background-color: $dark;
+            color:$white;
+        }
+        @include small{
+            font-size: 16px;
+            padding:10.5px 15px;
+        }
+    }
+
+    .pageOne{
+        border-left:none;
+    }
+
+    .currentpage{
+        background-color: $dark;
+        color:$white;
+    }
+}

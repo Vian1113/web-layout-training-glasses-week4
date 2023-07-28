@@ -708,4 +708,8 @@ footer .terms .item:hover {
 }
 .contact .submit:hover {
   background-color: #650300;
+}
+
+.seriesTitle .item {
+  font-style: 32px;
 }/*# sourceMappingURL=all.css.map */
