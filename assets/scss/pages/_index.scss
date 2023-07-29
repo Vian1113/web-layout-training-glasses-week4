@@ -1,13 +1,13 @@
 
 .banner{
   //background-image: url(../img/home-header.png);
-  background-image: url(/assets/images/home-header.png);
+  background-image: url(../assets/images/home-header.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 
   @include medium{
-      background-image: url(/assets/images/home-header-sm.png);
+      background-image: url(../assets/images/home-header-sm.png);
      
       .text{
           font-size: 16px;
@@ -95,17 +95,17 @@
 
 .coBranding{
 
-  background-image: url(/assets/images/index-bg.png);
+  background-image: url(../assets/images/index-bg.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 
   @include medium{
-      background-image: url(/assets/images/index-bg-md.png);
+      background-image: url(../assets/images/index-bg-md.png);
   }
 
   @include xsmall{
-      background-image: url(/assets/images/index-bg-sm.png);
+      background-image: url(../assets/images/index-bg-sm.png);
   }
 
   .container{
@@ -140,25 +140,25 @@
 
   .img_1{
       height: 240px;
-      background-image: url(/assets/images/home-section4-1.png);
+      background-image: url(../assets/images/home-section4-1.png);
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
 
       @include xsmall{
-          background-image: url(/assets/images/home-section4-1-sm.png);
+          background-image: url(../assets/images/home-section4-1-sm.png);
       }
   }
 
   .img_2{
       height: 240px;
-      background-image: url(/assets/images/home-section4-2.png);
+      background-image: url(../assets/images/home-section4-2.png);
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
 
       @include xsmall{
-          background-image: url(/assets/images/home-section4-2-sm.png);
+          background-image: url(../assets/images/home-section4-2-sm.png);
       }
   }
 
