@@ -179,6 +179,10 @@
     gap:64px;
 }
 
+.border-1{
+    border: 1px solid #000000;
+}
+
 .bg-white{
     background-color: $white;
 }
@@ -201,6 +205,10 @@
 
 .bg-orange{
     background-color: $orange;
+}
+
+.bg-transparent{
+    background-color: transparent;
 }
 
 .text-primary{
